@@ -1,0 +1,156 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito:400,600,700,900);
+@import url(https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&display=swap);
+@font-face {
+	font-family: "Manrope-Light";
+	src: url(../fonts/Manrope-Light.ttf);
+	src: local("Cerebri-sans Light"), url(../fonts/Manrope-Light.ttf) format("ttf");
+	font-weight: 300
+}
+
+@font-face {
+	font-family: "Manrope-Regular";
+	src: url(../fonts/Manrope-Regular.ttf);
+	src: local("Cerebri-sans Regular"), url(../fonts/Manrope-Regular.ttf) format("woff");
+	font-weight: 400
+}
+
+@font-face {
+	font-family: "Manrope-Bold";
+	font-style: normal;
+	src: local('fonts/Manrope-Bold'), url('../fonts/Manrope-Bold.ttf') format('woff');
+}
+
+@font-face {
+	font-family: "Montserrat-Bold";
+	font-style: normal;
+	src: local('fonts/Montserrat-Bold'), url('../fonts/Montserrat-Bold.ttf') format('woff');
+}
+
+@font-face {
+	font-family: "Montserrat-Medium";
+	font-style: normal;
+	src: local('fonts/Montserrat-Medium'), url('../fonts/Montserrat-Medium.ttf') format('woff');
+}
+
+@font-face {
+	font-family: "Montserrat-Regular";
+	font-style: normal;
+	src: local('fonts/Montserrat-Regular'), url('../fonts/Montserrat-Regular.ttf') format('woff');
+}
+
+html {
+	position: relative;
+	min-height: 100%
+}
+
+body {
+	overflow-x: hidden
+}
+/* Basic Navbar styling */
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #333;
+	padding: 1rem;
+  }
+  
+  .navbar-logo a {
+	color: white;
+	text-decoration: none;
+	font-size:22px;
+	font-weight: bold;
+  }
+  
+  /* Toggle button styling */
+  .menu-toggle {
+	display: none;
+	font-size: 22px;
+	cursor: pointer;
+	color: white;
+  }
+  
+  /* Navbar links styling */
+  .navbar-links {
+	list-style: none;
+	display: flex;
+	gap: 1rem;
+	margin: 0;
+	padding: 0;
+  }
+  
+  .navbar-links li {
+	margin: 0;
+  }
+  
+  .navbar-links a {
+	color: white;
+	text-decoration: none;
+	font-size: 1rem;
+  }
+  
+  .navbar-links a:hover {
+	text-decoration: underline;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+	.menu-toggle {
+	  display: block;
+	}
+  
+	.navbar-links {
+	  display: none;
+	  flex-direction: column;
+	  width: 100%;
+	}
+  
+	.navbar-links.open {
+	  display: flex;
+	  background-color: #333;
+	  position: absolute;
+	  top: 60px;
+	  left: 0;
+	  padding: 1rem;
+	}
+  
+	.navbar-links li {
+	  margin: 0.5rem 0;
+	}
+  }
+  .navbar-links a {
+	color: #fff; /* Default link color */
+	text-decoration: none;
+	padding: 0.5rem 1rem;
+  }
+  
+  .navbar-links a.active-link {
+	color: #00ff00!important; /* Green color for active link */
+	font-weight:22px!important; /* Optional: Make the active link bold */
+  }
+  
+  .footer_bg{
+	background-color: #333;
+	text-align: center;
+	padding: 1rem;
+  }
+  .button-group button {
+	margin-right: 10px; /* Adjust the value as needed */
+  }
+  
+  .button-group button:last-child {
+	margin-right: 0; /* Remove margin from the last button */
+  }
+  .searchbox {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    float:right;
+	padding-bottom: 20px;
+}
+.buttonposition{
+	float: right;
+	margin-top:20px
+}
+  
+  
