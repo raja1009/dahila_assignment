@@ -1,14 +1,22 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import Login from './Pages/Login'
-import Home from './Pages/Home'
+
+import Home from './Component/Home';
+import Books from './Component/Books';
+import Users from './Component/Users';
+import BorrowingHistory from './Component/BorrowingHistory';
 
 const AppRouter = () => {
   return (
     <>
     <Routes>
-        <Route exact path = '/' element = {<Login/>}/>
-        <Route exact path = '/home' element = {<Home/>}/>
+        
+        <Route path="/" element={<Home />} />
+        <Route path="/books" element={<Books />} />
+        <Route path="/users" element={<Users />} />
+        <Route path="/history" element={<BorrowingHistory />} />
+
+         
     </Routes>
     </>
   )
