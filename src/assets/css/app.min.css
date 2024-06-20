@@ -152,5 +152,29 @@ body {
 	float: right;
 	margin-top:20px
 }
+
+
+  .form-group {
+	margin-bottom: 15px;
+  }
+  
+  .form-control {
+	border: 1px solid #ced4da;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 16px;
+  }
+  .parentborrowsinglist{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+  }
+  .returnbooks{
+	margin-left:10px
+  }
+  
+ 
+  
   
   

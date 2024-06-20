@@ -149,11 +149,12 @@ const Books = () => {
 
   return (
     <>
+     <div className='container'>
       <div className="row">
-        <div className="col-xl-12">
+        <div className="col-md-12">
           <div className="card card_shadow">
             <div className="card-body ">
-              <h3>List of Books :{books.length}</h3>
+              <h3 style={{float:"left"}}>List of Books :{books.length}</h3>
               <div className="searchbox">
                 <input type="text" placeholder="Enter a search" onChange={handleSearch} />
                 <Button style={{ marginLeft: "10px" }} variant="btn btn-primary" className="me-2" onClick={() => openModal('add')}>
@@ -292,6 +293,7 @@ const Books = () => {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </>
   );

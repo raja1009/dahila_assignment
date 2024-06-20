@@ -1,0 +1,9 @@
+{
+    "books": [
+      { "id": 1, "title": "Book 1", "quantity": 5 },
+      { "id": 2, "title": "Book 2", "quantity": 3 },
+      { "id": 3, "title": "Book 3", "quantity": 2 }
+    ],
+    "borrowHistory": []
+  }
+  
