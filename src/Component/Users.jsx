@@ -224,7 +224,7 @@ const Users = () => {
               {/* Modal for Add/Edit Book */}
               <Modal show={showModal} onHide={closeModal}>
                 <Modal.Header closeButton>
-                  <Modal.Title>{modalType === 'add' ? 'Add Book' : 'Edit Book'}</Modal.Title>
+                  <Modal.Title>{modalType === 'add' ? 'Add User' : 'Edit User'}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                   <Form onSubmit={handleFormSubmit}>
@@ -273,7 +273,7 @@ const Users = () => {
                    
 
                     <Button variant="primary" type="submit" className="buttonposition">
-                      {modalType === 'add' ? 'Add Book' : 'Save Changes'}
+                      {modalType === 'add' ? 'Add User' : 'Save Changes'}
                     </Button>
                   </Form>
                 </Modal.Body>
