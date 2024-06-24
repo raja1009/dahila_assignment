@@ -202,7 +202,7 @@ const Books = () => {
                   <button
                     key={pageNumber}
                     onClick={() => paginate(pageNumber)}
-                    className={currentPage === pageNumber ? 'active' : ''}
+                    className={currentPage === pageNumber ? 'activeclass' : ''}
                   >
                     {pageNumber}
                   </button>
